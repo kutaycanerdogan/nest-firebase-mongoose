@@ -3,8 +3,6 @@ import {AppModule} from './app.module';
 import * as admin from 'firebase-admin';
 import * as dotenv from 'dotenv';
 import {NestApplicationOptions, RequestMethod} from '@nestjs/common';
-dotenv.config();
-
 async function bootstrap() {
   admin.initializeApp({
     credential: admin.credential.cert({
